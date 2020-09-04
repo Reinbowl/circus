@@ -1,3 +1,7 @@
+package circus.animal;
+
+import circus.Asset;
+
 public class Animal implements Asset {
 
     @Override
