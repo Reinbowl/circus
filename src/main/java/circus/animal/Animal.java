@@ -2,7 +2,6 @@ package circus.animal;
 
 import circus.Asset;
 
-<<<<<<< HEAD
 public class Animal implements Asset {
 
     @Override
@@ -13,9 +12,4 @@ public class Animal implements Asset {
     public String speak(){
         return null;
     }
-=======
-public abstract class Animal implements Asset {
-    
-    public abstract String speak();
->>>>>>> improved
 }
