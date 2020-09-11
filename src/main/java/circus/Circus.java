@@ -62,5 +62,11 @@ public class Circus {
         }
         System.out.println("Number of animals: " + animalArrayList.size());
         System.out.println("Index of Louie: " + animalArrayList.indexOf(louie));
+
+        animalArrayList.sort(Animal.AnimalNameComparator);
+
+        for(Animal a : animalArrayList) {
+            System.out.println(a);
+        }
     }
 }
