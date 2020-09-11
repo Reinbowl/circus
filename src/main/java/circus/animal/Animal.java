@@ -2,14 +2,8 @@ package circus.animal;
 
 import circus.Asset;
 
-public class Animal implements Asset {
 
-    @Override
-    public int getValue() {
-        return 10;
-    }
-
-    public String speak(){
-        return null;
-    }
+public abstract class Animal implements Asset {
+    public String name;
+    public abstract String speak();
 }
