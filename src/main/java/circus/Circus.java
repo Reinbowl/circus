@@ -3,6 +3,7 @@ package circus;
 import circus.animal.Animal;
 import circus.animal.Duck;
 import circus.animal.Parrot;
+import circus.animal.Tiger;
 import circus.stuff.Cage;
 import circus.stuff.Cannon;
 import circus.stuff.Equipment;
@@ -73,11 +74,16 @@ public class Circus {
             System.out.println("Total value of equipments " + calculateValue(equipments));
             System.out.println("Total value of animals " + calculateValue(animals));
             Cage<Duck> duckCage = new Cage<>();
-            Duck duck = new Duck();
+            Duck duck = new Duck("Heuye");
             duckCage.lockUp(duck);
-            Parrot parrot = new Parrot();
+
+            Parrot parrot = new Parrot("Popper");
             Cage<Parrot> parrotCage = new Cage<>();
             parrotCage.lockUp(parrot);
+
+            Tiger tiger = new Tiger("Sherkhan");
+            Cage<Tiger> tigerCage = new Cage<>();
+            tigerCage.lockUp(tiger);
 
             ArrayList<Cage> cages = new ArrayList<>();
             cages.add(duckCage);
